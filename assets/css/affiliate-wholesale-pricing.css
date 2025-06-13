@@ -1,0 +1,102 @@
+/* =============================================
+   Affiliate Wholesale Pricing - Main Stylesheet
+   Includes all frontend and admin UI styles
+============================================= */
+
+/* Frontend Price Displays */
+.awp-label {
+    font-weight: bold;
+    color: #2271b1;
+    margin-right: 5px;
+}
+
+.awp-price {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.awp-savings {
+    color: #2e7d32;
+    font-size: 0.9em;
+}
+
+/* Login Form Styles */
+.awp-login-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.awp-login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.awp-login-form input[type="email"],
+.awp-login-form input[type="password"],
+.awp-login-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.awp-login-form button[type="submit"] {
+    background: #2271b1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.awp-login-form button[type="submit"]:hover {
+    background: #135e96;
+}
+
+.awp-login-form button[type="submit"][disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Messages */
+.awp-message {
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+
+.awp-message.error {
+    background: #ffebee;
+    color: #c62828;
+    border-color: #ef9a9a;
+}
+
+.awp-message.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-color: #a5d6a7;
+}
+
+/* Admin UI Improvements */
+.wc-input-price.short {
+    width: 100px !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .awp-login-form {
+        padding: 15px;
+    }
+    
+    .awp-message {
+        padding: 10px;
+    }
+}
